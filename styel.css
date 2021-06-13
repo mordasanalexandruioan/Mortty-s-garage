@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.header-nav li {
+    margin: 0 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
