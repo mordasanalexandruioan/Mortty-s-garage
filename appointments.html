@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleApponts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="li-container">
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+            </div>
+
+            <div class="li-container">
+                <li>
+                    <a href="#"> <i class="fas fa-user-friends"></i> </a>
+                </li>
+            </div>
+
+            <div class="li-container">
+                <li>
+                    <a href="#"> <i class="fas fa-calendar-check"></i></a>
+                </li>
+            </div>
+
+            <div class="li-container">
+                <li>
+                    <a href="#"> <i class="fas fa-phone"></i> </a>
+                </li>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainAppoints">
+        <aside class="appoints-options">
+            <label for="#appointment">Select date</label>
+            <input type="date" name="user_appointment" id="appointment">
+            <button id="cancel">&#10006;</button>
+            <button id="confirm">&#10003;</button>
+        </aside>
+
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Problem</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row"><span>Popa Ioan</span></th>
+                    <td>Change oil filter</td>
+                    <td>09/22/2021</td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><span>Popa Ioan</span></th>
+                    <td>Change oil filter</td>
+                    <td>09/22/2021</td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><span>Popa Ioan</span></th>
+                    <td>Change oil filter</td>
+                    <td>09/22/2021</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+
+    <footer class="contact">
+
+        <form action="index.html" method="POST">
+            <fieldset>
+                <legend>Contact</legend>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="mail">Mail</label>
+                <input type="email" id="mail" name="user_mail">
+
+                <label for="telephone">Telephone</label>
+                <input type="tel" id="telephone" name="user_tel">
+
+                <label for="mesage">Describe your problem</label>
+                <textarea name="user_problem" id="mesage"></textarea>
+            </fieldset>
+
+            <button type="submit">Send</button>
+        </form>
+
+    </footer>
+</body>
+
+</html>

@@ -33,7 +33,7 @@ header {
     align-items: center;
     list-style: none;
     text-align: center;
-    background-color: #fff;
+    background-color: rgb(238, 238, 238);
     position: absolute;
     padding: 1.2em 0;
     top: 0;
@@ -66,6 +66,10 @@ INTRO
     position: relative;
     padding: .3em 0;
     text-shadow: 1px 1px 1px #000;
+}
+
+.site-intro h1 {
+    color: rgb(0, 217, 255);
 }
 
 .site-intro:before {
@@ -116,7 +120,7 @@ ABOUT US INTRO
     position: absolute;
     width: 75%;
     height: 90%;
-    background: white;
+    background: rgb(240, 240, 240);
     color: #000;
     z-index: 1;
     backdrop-filter: blur(5px);
@@ -153,6 +157,40 @@ ABOUT US INTRO
 APPOINTMENTS
 =======================================================*/
 
+.appointments {
+    background-color: rgb(245, 245, 245);
+    color: rgb(27, 26, 26);
+    padding: 2em 1.24em;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.appointments h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: rgb(0, 217, 255);
+    padding: .2em .5em;
+    border-bottom-right-radius: .5em;
+    border-bottom: solid 2px rgb(59, 59, 59);
+    border-right: solid 2px rgb(59, 59, 59);
+}
+
+.appointments p {
+    margin: 2em 0;
+}
+
+.appointments .fa-calendar-alt {
+    position: absolute;
+    font-size: 8rem;
+    transform: rotate(-45deg);
+    bottom: -.25em;
+    right: -.2em;
+    color: rgba(131, 131, 131, 0.459);
+}
+
 
 /*=======================================================
 APPOINTMENTS
@@ -162,6 +200,17 @@ APPOINTMENTS
 /*=======================================================
 LINK BUTTONS
 =======================================================*/
+
+.link-button {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(0, 217, 255);
+    padding: .2em .5em;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    font-weight: bold;
+}
 
 
 /*=======================================================
