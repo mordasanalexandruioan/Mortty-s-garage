@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointments</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleApponts.css">
+    <title>Appointments Ciornaa</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
@@ -45,15 +44,27 @@
 
     <main class="mainAppoints">
         <aside class="appoints-options">
-            <label for="#appointment">Select date</label>
-            <input type="date" name="user_appointment" id="appointment">
-            <button id="cancel">&#10006;</button>
-            <button id="confirm">&#10003;</button>
+            <div>
+                <label for="#appointment">Select date</label>
+                <input type="date" name="user_appointment" id="appointment">
+            </div>
+
+            <div>
+                <label for="#appnt-name">Name</label>
+                <input type="text" name="user_appointment-name" id="appnt-name">
+            </div>
+
+            <div>
+                <label for="#appnt-problem">Problem</label>
+                <input type="text" name="user_appointment-problem" id="appnt-problem">
+            </div>
+
+
+            <button id="confirm">Confirm &#10003;</button>
         </aside>
 
 
-        <table>
-
+        <!-- <table>
             <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -68,21 +79,8 @@
                     <td>Change oil filter</td>
                     <td>09/22/2021</td>
                 </tr>
-
-                <tr>
-                    <th scope="row"><span>Popa Ioan</span></th>
-                    <td>Change oil filter</td>
-                    <td>09/22/2021</td>
-                </tr>
-
-                <tr>
-                    <th scope="row"><span>Popa Ioan</span></th>
-                    <td>Change oil filter</td>
-                    <td>09/22/2021</td>
-                </tr>
             </tbody>
-
-        </table>
+        </table> -->
     </main>
 
     <footer class="contact">
@@ -108,6 +106,8 @@
         </form>
 
     </footer>
+    <script src="javaScript/functionsAppointments.js"></script>
+    <script src="javaScript/main.js"></script>
 </body>
 
 </html>

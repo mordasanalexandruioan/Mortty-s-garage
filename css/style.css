@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  background-color: #1b1a1a;
+  color: #f0f0f0;
+  font-family: "Rajdhani", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 40vh;
+  background: url(../img/backgrounds/background-car.jpg) no-repeat center/cover;
+}
+header .header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  background-color: #eeeeee;
+  position: absolute;
+  padding: 1.2em 0;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+}
+header .header-nav .li-container a {
+  color: black;
+  text-decoration: none;
+}
+header .header-nav .li-container a i {
+  font-size: 1.4rem;
+}
+
+.site-intro {
+  text-align: center;
+  position: relative;
+  padding: 0.3em 0;
+  text-shadow: 1px 1px 1px #000;
+}
+.site-intro h1 {
+  color: #00d9ff;
+}
+.site-intro:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.527);
+  z-index: -1;
+  backdrop-filter: blur(2px);
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+.site-intro:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../img/backgrounds/background-mechanic.jpg) no-repeat center/cover;
+  z-index: -2;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #000;
+  background-color: #00d9ff;
+  padding: 0.2em 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  font-weight: bold;
+}
+
+.about-us-intro {
+  position: relative;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 40vh;
+}
+.about-us-intro .aboutUs-content1 {
+  position: absolute;
+  width: 75%;
+  height: 90%;
+  background: #f0f0f0;
+  color: #000;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  transform: translateX(13%);
+  padding: 0 0.3em;
+  border-radius: 0.2em;
+}
+.about-us-intro .aboutUs-content1 h2 {
+  margin: 0;
+}
+.about-us-intro .aboutUs-content2 {
+  position: absolute;
+  width: 75%;
+  height: 90%;
+  background-color: #000;
+  color: #e4e4e4;
+  z-index: 1;
+  transform: translate(24%, 20%);
+  padding: 0 0.6em;
+  border-top-right-radius: 2.7em;
+  border-bottom-right-radius: 2.7em;
+  border-bottom-left-radius: 2.7em;
+}
+
+.appointments {
+  background-color: whitesmoke;
+  color: #1b1a1a;
+  padding: 2em 1.24em;
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+}
+.appointments h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background: #00d9ff;
+  padding: 0.2em 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom: solid 2px #3b3b3b;
+  border-right: solid 2px #3b3b3b;
+}
+.appointments p {
+  margin: 2em 0;
+}
+.appointments .fa-calendar-alt {
+  position: absolute;
+  font-size: 8rem;
+  transform: rotate(-45deg);
+  bottom: -0.25em;
+  right: -0.2em;
+  color: rgba(131, 131, 131, 0.459);
+}
+
+.mainAppoints {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 2em 0.7em;
+}
+.mainAppoints .appoints-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 120px;
+  width: 290px;
+}
+.mainAppoints .appoints-options div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.mainAppoints .appoints-options div input {
+  min-width: 177px;
+}
+.mainAppoints .appoints-options label {
+  font-weight: bolder;
+}
+.mainAppoints #confirm {
+  font-size: 1rem;
+  padding: 0 0.9em 0.1em;
+  border: none;
+  border-radius: 0.3em;
+  margin-top: 1.2em;
+  align-self: center;
+}
+.mainAppoints #confirm {
+  background-color: #00c500;
+}
+.mainAppoints table {
+  margin-top: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

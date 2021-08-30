@@ -1,0 +1,150 @@
+.site-intro {
+    text-align: center;
+    position: relative;
+    padding: .3em 0;
+    text-shadow: 1px 1px 1px #000;
+    & h1 {
+        color: rgb(0, 217, 255);
+    }
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.527);
+        z-index: -1;
+        backdrop-filter: blur(2px);
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+    }
+    &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url(../img/backgrounds/background-mechanic.jpg) no-repeat center/cover;
+        z-index: -2;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+    }
+}
+
+//--------Link buttons
+.link-button {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(0, 217, 255);
+    padding: .2em .5em;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    font-weight: bold;
+}
+
+//--------------------ABOUT US--------------------
+.about-us-intro {
+    position: relative;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    height: 40vh;
+    & .aboutUs-content1 {
+        position: absolute;
+        width: 75%;
+        height: 90%;
+        background: rgb(240, 240, 240);
+        color: #000;
+        z-index: 1;
+        backdrop-filter: blur(5px);
+        transform: translateX(13%);
+        padding: 0 .3em;
+        border-radius: .2em;
+        h2 {
+            margin: 0;
+        }
+    }
+    & .aboutUs-content2 {
+        position: absolute;
+        width: 75%;
+        height: 90%;
+        background-color: #000;
+        color: rgb(228, 228, 228);
+        z-index: 1;
+        transform: translate(24%, 20%);
+        padding: 0 .6em;
+        border-top-right-radius: 2.7em;
+        border-bottom-right-radius: 2.7em;
+        border-bottom-left-radius: 2.7em;
+    }
+}
+
+//--------------------------------APPOINTMENTS-------------------------
+.appointments {
+    background-color: rgb(245, 245, 245);
+    color: rgb(27, 26, 26);
+    padding: 2em 1.24em;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+    & h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background: rgb(0, 217, 255);
+        padding: .2em .5em;
+        border-bottom-right-radius: .5em;
+        border-bottom: solid 2px rgb(59, 59, 59);
+        border-right: solid 2px rgb(59, 59, 59);
+    }
+    & p {
+        margin: 2em 0;
+    }
+    & .fa-calendar-alt {
+        position: absolute;
+        font-size: 8rem;
+        transform: rotate(-45deg);
+        bottom: -.25em;
+        right: -.2em;
+        color: rgba(131, 131, 131, 0.459);
+    }
+}
+
+//-------Apointments page
+.mainAppoints {
+    background-color: rgb(248, 248, 248);
+    color: black;
+    padding: 2em .7em;
+    & .appoints-options {
+        @include flexy($dir: column, $align: flex-start, $just: space-evenly);
+        min-height: 120px;
+        width: 290px;
+        div {
+            @include flexy($dir: row, $align: center, $just: space-between);
+            width: 100%;
+            input {
+                min-width: 177px;
+            }
+        }
+        label {
+            font-weight: bolder;
+        }
+    }
+    & #confirm {
+        font-size: 1rem;
+        padding: 0 .9em .1em;
+        border: none;
+        border-radius: .3em;
+        margin-top: 1.2em;
+        align-self: center;
+    }
+    & #confirm {
+        background-color: rgb(0, 197, 0);
+    }
+    & table {
+        margin-top: 2em;
+    }
+}
