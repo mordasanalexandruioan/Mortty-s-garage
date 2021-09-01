@@ -1,0 +1,30 @@
+.appointments {
+    background-color: rgb(245, 245, 245);
+    color: rgb(27, 26, 26);
+    padding: 2em 1.24em;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+    & h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background: rgb(0, 217, 255);
+        padding: .2em .5em;
+        border-bottom-right-radius: .5em;
+        border-bottom: solid 2px rgb(59, 59, 59);
+        border-right: solid 2px rgb(59, 59, 59);
+    }
+    & p {
+        margin: 2em 0;
+    }
+    & .fa-calendar-alt {
+        position: absolute;
+        font-size: 8rem;
+        transform: rotate(-45deg);
+        bottom: -.25em;
+        right: -.2em;
+        color: rgba(131, 131, 131, 0.459);
+    }
+}

@@ -16,7 +16,8 @@ header {
   height: 40vh;
   background: url(../img/backgrounds/background-car.jpg) no-repeat center/cover;
 }
-header .header-nav {
+
+.header-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,11 +32,11 @@ header .header-nav {
   width: 20%;
   height: 100%;
 }
-header .header-nav .li-container a {
+.header-nav .li-container a {
   color: black;
   text-decoration: none;
 }
-header .header-nav .li-container a i {
+.header-nav .li-container a i {
   font-size: 1.4rem;
 }
 
@@ -74,24 +75,13 @@ header .header-nav .li-container a i {
   border-bottom-right-radius: 2em;
 }
 
-.link-button {
-  text-decoration: none;
-  color: #000;
-  background-color: #00d9ff;
-  padding: 0.2em 0.5em;
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
-  font-weight: bold;
-}
-
-.about-us-intro {
+.about-us {
   position: relative;
   margin-top: 4em;
   margin-bottom: 4em;
   height: 40vh;
 }
-.about-us-intro .aboutUs-content1 {
+.about-us .aboutUs-content1 {
   position: absolute;
   width: 75%;
   height: 90%;
@@ -103,10 +93,10 @@ header .header-nav .li-container a i {
   padding: 0 0.3em;
   border-radius: 0.2em;
 }
-.about-us-intro .aboutUs-content1 h2 {
+.about-us .aboutUs-content1 h2 {
   margin: 0;
 }
-.about-us-intro .aboutUs-content2 {
+.about-us .aboutUs-content2 {
   position: absolute;
   width: 75%;
   height: 90%;
@@ -151,12 +141,7 @@ header .header-nav .li-container a i {
   color: rgba(131, 131, 131, 0.459);
 }
 
-.mainAppoints {
-  background-color: #f8f8f8;
-  color: black;
-  padding: 2em 0.7em;
-}
-.mainAppoints .appoints-options {
+.appoints-options {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -164,20 +149,20 @@ header .header-nav .li-container a i {
   min-height: 120px;
   width: 290px;
 }
-.mainAppoints .appoints-options div {
+.appoints-options div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.mainAppoints .appoints-options div input {
+.appoints-options div input {
   min-width: 177px;
 }
-.mainAppoints .appoints-options label {
+.appoints-options label {
   font-weight: bolder;
 }
-.mainAppoints #confirm {
+.appoints-options #confirm {
   font-size: 1rem;
   padding: 0 0.9em 0.1em;
   border: none;
@@ -185,11 +170,28 @@ header .header-nav .li-container a i {
   margin-top: 1.2em;
   align-self: center;
 }
-.mainAppoints #confirm {
+.appoints-options #confirm {
   background-color: #00c500;
 }
-.mainAppoints table {
+.appoints-options table {
   margin-top: 2em;
+}
+
+.mainAppoints {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 2em 0.7em;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #000;
+  background-color: #00d9ff;
+  padding: 0.2em 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

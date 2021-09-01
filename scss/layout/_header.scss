@@ -2,25 +2,4 @@ header {
     position: relative;
     height: 40vh;
     background: url(../img/backgrounds/background-car.jpg) no-repeat center/cover;
-    & .header-nav {
-        @include flexy($dir: column, $just: space-between, $align: center);
-        list-style: none;
-        text-align: center;
-        background-color: rgb(238, 238, 238);
-        position: absolute;
-        padding: 1.2em 0;
-        top: 0;
-        right: 0;
-        width: 20%;
-        height: 100%;
-        .li-container {
-            a {
-                color: black;
-                text-decoration: none;
-                i {
-                    font-size: 1.4rem;
-                }
-            }
-        }
-    }
 }

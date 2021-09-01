@@ -1,0 +1,34 @@
+.about-us {
+    position: relative;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    height: 40vh;
+    & .aboutUs-content1 {
+        position: absolute;
+        width: 75%;
+        height: 90%;
+        background: rgb(240, 240, 240);
+        color: #000;
+        z-index: 1;
+        backdrop-filter: blur(5px);
+        transform: translateX(13%);
+        padding: 0 .3em;
+        border-radius: .2em;
+        h2 {
+            margin: 0;
+        }
+    }
+    & .aboutUs-content2 {
+        position: absolute;
+        width: 75%;
+        height: 90%;
+        background-color: #000;
+        color: rgb(228, 228, 228);
+        z-index: 1;
+        transform: translate(24%, 20%);
+        padding: 0 .6em;
+        border-top-right-radius: 2.7em;
+        border-bottom-right-radius: 2.7em;
+        border-bottom-left-radius: 2.7em;
+    }
+}
