@@ -24,7 +24,7 @@ header {
   align-items: center;
   list-style: none;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   position: absolute;
   padding: 1.2em 0;
   top: 0;
@@ -45,9 +45,14 @@ header {
   position: relative;
   padding: 0.3em 0;
   text-shadow: 1px 1px 1px #000;
+  min-height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .site-intro h1 {
   color: #00d9ff;
+  font-size: 1.8rem;
 }
 .site-intro:before {
   position: absolute;
@@ -108,6 +113,14 @@ header {
   border-top-right-radius: 2.7em;
   border-bottom-right-radius: 2.7em;
   border-bottom-left-radius: 2.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.7em;
+}
+.about-us .link-button, .about-us .contact button, .contact .about-us button {
+  max-width: 90px;
+  margin-left: 0.8em;
 }
 
 .appointments {
@@ -181,9 +194,16 @@ header {
   background-color: #f8f8f8;
   color: black;
   padding: 2em 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainAppoints hr {
+  width: 100%;
 }
 
-.link-button {
+.link-button, .contact button {
   text-decoration: none;
   color: #000;
   background-color: #00d9ff;
@@ -192,6 +212,72 @@ header {
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   font-weight: bold;
+}
+
+.contact {
+  padding: 1em 0.8em;
+}
+.contact fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact fieldset legend {
+  font-size: 1.4rem;
+  margin-bottom: 0.63em;
+}
+.contact fieldset label {
+  font-size: 1.1rem;
+}
+.contact fieldset input {
+  margin-bottom: 0.84em;
+  padding: 0.5em;
+  font-size: 0.91rem;
+  border-radius: 0.2em;
+  border: solid 1px gray;
+  box-shadow: 0px 0px 2px #004d49 inset;
+  outline-color: #00d9ff;
+}
+.contact fieldset textarea {
+  padding: 0.5em;
+  font-size: 0.91rem;
+  border-radius: 0.2em;
+  border: solid 1px gray;
+  box-shadow: 0px 0px 2px #004d49 inset;
+  min-height: 100px;
+}
+.contact button {
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 0.4em;
+  width: 50%;
+  max-width: 200px;
+}
+
+.our-services {
+  padding: 1em 0.8em;
+  background-color: whitesmoke;
+  color: #111;
+}
+.our-services h2 {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  text-decoration: underline #00d9ff;
+}
+.our-services p {
+  font-weight: 600;
+}
+
+.history {
+  padding: 1em 0.8em;
+}
+.history h2 {
+  color: #00d9ff;
+  font-size: 1.6rem;
+  text-decoration: underline whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */

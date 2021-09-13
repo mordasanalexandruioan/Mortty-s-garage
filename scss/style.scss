@@ -5,10 +5,13 @@
 @import 'layout/header',
 'layout/main',
 'layout/footer';
-@import 'components/header/header-nav',
-'components/main/site-intro',
-'components/main/about-us',
-'components/main/appointments',
-'components/main/appoints-options',
-'components/main/appoints',
-'components/main/link-button';
+@import 'components/header-nav',
+'components/site-intro',
+'components/about-us',
+'components/appointments',
+'components/appoints-options',
+'components/appoints',
+'components/link-button',
+'components/contact',
+'components/our-services',
+'components/history';
