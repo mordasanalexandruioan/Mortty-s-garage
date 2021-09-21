@@ -6,278 +6,78 @@ body {
   padding: 0px;
   margin: 0px;
   min-height: 100vh;
-  background-color: #1b1a1a;
+  background-image: linear-gradient(292deg, rgba(150, 150, 150, 0.03) 0%, rgba(150, 150, 150, 0.03) 20%, rgba(151, 151, 151, 0.03) 20%, rgba(151, 151, 151, 0.03) 40%, rgba(215, 215, 215, 0.03) 40%, rgba(215, 215, 215, 0.03) 60%, rgba(254, 254, 254, 0.03) 60%, rgba(254, 254, 254, 0.03) 80%, rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%), linear-gradient(62deg, rgba(34, 34, 34, 0.03) 0%, rgba(34, 34, 34, 0.03) 20%, rgba(171, 171, 171, 0.03) 20%, rgba(171, 171, 171, 0.03) 40%, rgba(206, 206, 206, 0.03) 40%, rgba(206, 206, 206, 0.03) 60%, rgba(210, 210, 210, 0.03) 60%, rgba(210, 210, 210, 0.03) 80%, #151515 80%, #151515 100%), linear-gradient(314deg, rgba(224, 224, 224, 0.03) 0%, rgba(224, 224, 224, 0.03) 20%, rgba(254, 254, 254, 0.03) 20%, rgba(254, 254, 254, 0.03) 40%, rgba(178, 178, 178, 0.03) 40%, rgba(178, 178, 178, 0.03) 60%, rgba(3, 251, 182, 0.13) 60%, rgba(3, 251, 182, 0.13) 80%, rgba(73, 73, 73, 0.03) 80%, rgba(73, 73, 73, 0.03) 100%), linear-gradient(32deg, rgba(182, 182, 182, 0.01) 0%, rgba(182, 182, 182, 0.01) 12.5%, rgba(0, 0, 0, 0.01) 12.5%, rgba(0, 0, 0, 0.01) 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 37.5%, rgba(143, 143, 143, 0) 37.5%, rgba(143, 143, 143, 0) 50%, rgba(3, 251, 182, 0.13) 50%, rgba(3, 251, 182, 0.13) 62.5%, rgba(92, 92, 92, 0.01) 62.5%, rgba(92, 92, 92, 0.01) 75%, rgba(56, 56, 56, 0.01) 75%, rgba(56, 56, 56, 0.01) 87.5%, rgba(253, 253, 253, 0.01) 87.5%, rgba(253, 253, 253, 0.01) 100%), linear-gradient(247deg, rgba(103, 103, 103, 0) 0%, rgba(103, 103, 103, 0) 12.5%, rgba(240, 240, 240, 0.02) 12.5%, rgba(240, 240, 240, 0.02) 25%, rgba(18, 18, 18, 0.02) 25%, rgba(18, 18, 18, 0.02) 37.5%, rgba(38, 38, 38, 0.02) 37.5%, rgba(38, 38, 38, 0.02) 50%, rgba(246, 246, 246, 0.02) 50%, rgba(246, 246, 246, 0.02) 62.5%, rgba(9, 9, 9, 0.79) 62.5%, rgba(9, 9, 9, 0.79) 75%, rgba(167, 167, 167, 0.02) 75%, rgba(167, 167, 167, 0.02) 87.5%, rgba(86, 86, 86, 0.02) 87.5%, rgba(86, 86, 86, 0.02) 100%), linear-gradient(90deg, #1a1a1a, #1a1a1a);
   color: #f0f0f0;
   font-family: "Rajdhani", sans-serif;
 }
 
 header {
-  position: relative;
-  height: 40vh;
-  background: url(../img/backgrounds/background-car.jpg) no-repeat center/cover;
+  padding: 0.8em 0.9em;
+  list-style: none;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+header nav .create-account {
+  border-radius: 50%;
+  padding: 0.2em 0.3em 0.12em;
+  border: solid 2px rgba(255, 255, 255, 0.568);
+  background-color: rgba(26, 26, 26, 0.829);
+  box-shadow: 2px 2px 10px black;
+}
+header a {
+  color: #f6f6f6;
+}
+
+main {
+  padding: 1em 0.7em;
 }
 
 .header-nav {
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  text-align: center;
-  background-color: #f6f6f6;
-  position: absolute;
-  padding: 1.2em 0;
-  top: 0;
-  right: 0;
-  width: 20%;
-  height: 100%;
+  padding: 0.2em 0.3em 0.1em;
+  border: solid 2px rgba(255, 255, 255, 0.568);
+  border-radius: 0.5em;
+  min-width: 230px;
+  background-color: rgba(26, 26, 26, 0.829);
+  box-shadow: 2px 2px 10px black;
 }
-.header-nav .li-container a {
-  color: black;
-  text-decoration: none;
+.header-nav li {
+  margin-left: 0.7em;
+  font-size: 1.5rem;
 }
-.header-nav .li-container a i {
-  font-size: 1.4rem;
+.header-nav li:nth-child(1) {
+  margin-left: 0;
 }
 
 .site-intro {
-  text-align: center;
-  position: relative;
-  padding: 0.3em 0;
-  text-shadow: 1px 1px 1px #000;
-  min-height: 134px;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .site-intro h1 {
-  color: #00d9ff;
-  font-size: 1.8rem;
-}
-.site-intro:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.527);
-  z-index: -1;
-  backdrop-filter: blur(2px);
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
-.site-intro:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: url(../img/backgrounds/background-mechanic.jpg) no-repeat center/cover;
-  z-index: -2;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  font-size: 2.3rem;
+  margin: 0;
 }
 
 .about-us {
-  position: relative;
-  margin-top: 4em;
-  margin-bottom: 4em;
-  height: 40vh;
-}
-.about-us .aboutUs-content1 {
-  position: absolute;
-  width: 75%;
-  height: 90%;
-  background: #f0f0f0;
-  color: #000;
-  z-index: 1;
-  backdrop-filter: blur(5px);
-  transform: translateX(13%);
-  padding: 0 0.3em;
-  border-radius: 0.2em;
-}
-.about-us .aboutUs-content1 h2 {
-  margin: 0;
-}
-.about-us .aboutUs-content2 {
-  position: absolute;
-  width: 75%;
-  height: 90%;
-  background-color: #000;
-  color: #e4e4e4;
-  z-index: 1;
-  transform: translate(24%, 20%);
-  padding: 0 0.6em;
-  border-top-right-radius: 2.7em;
-  border-bottom-right-radius: 2.7em;
-  border-bottom-left-radius: 2.7em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 1.7em;
-}
-.about-us .link-button, .about-us .contact button, .contact .about-us button {
-  max-width: 90px;
-  margin-left: 0.8em;
-}
-
-.appointments {
-  background-color: whitesmoke;
-  color: #1b1a1a;
-  padding: 2em 1.24em;
-  position: relative;
-  font-weight: bold;
-  overflow: hidden;
-}
-.appointments h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  background: #00d9ff;
-  padding: 0.2em 0.5em;
-  border-bottom-right-radius: 0.5em;
-  border-bottom: solid 2px #3b3b3b;
-  border-right: solid 2px #3b3b3b;
-}
-.appointments p {
-  margin: 2em 0;
-}
-.appointments .fa-calendar-alt {
-  position: absolute;
-  font-size: 8rem;
-  transform: rotate(-45deg);
-  bottom: -0.25em;
-  right: -0.2em;
-  color: rgba(131, 131, 131, 0.459);
-}
-
-.appoints-options {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  min-height: 120px;
-  width: 290px;
-}
-.appoints-options div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.appoints-options div input {
-  min-width: 177px;
-}
-.appoints-options label {
-  font-weight: bolder;
-}
-.appoints-options #confirm {
-  font-size: 1rem;
-  padding: 0 0.9em 0.1em;
-  border: none;
-  border-radius: 0.3em;
-  margin-top: 1.2em;
-  align-self: center;
-}
-.appoints-options #confirm {
-  background-color: #00c500;
-}
-.appoints-options table {
-  margin-top: 2em;
-}
-
-.mainAppoints {
-  background-color: #f8f8f8;
-  color: black;
-  padding: 2em 0.7em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.mainAppoints hr {
-  width: 100%;
-}
-
-.link-button, .contact button {
-  text-decoration: none;
-  color: #000;
-  background-color: #00d9ff;
-  padding: 0.2em 0.5em;
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
-  font-weight: bold;
-}
-
-.contact {
-  padding: 1em 0.8em;
-}
-.contact fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-.contact fieldset legend {
-  font-size: 1.4rem;
-  margin-bottom: 0.63em;
-}
-.contact fieldset label {
-  font-size: 1.1rem;
-}
-.contact fieldset input {
-  margin-bottom: 0.84em;
-  padding: 0.5em;
-  font-size: 0.91rem;
-  border-radius: 0.2em;
-  border: solid 1px gray;
-  box-shadow: 0px 0px 2px #004d49 inset;
-  outline-color: #00d9ff;
-}
-.contact fieldset textarea {
-  padding: 0.5em;
-  font-size: 0.91rem;
-  border-radius: 0.2em;
-  border: solid 1px gray;
-  box-shadow: 0px 0px 2px #004d49 inset;
-  min-height: 100px;
-}
-.contact button {
-  border: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  margin-top: 0.4em;
-  width: 50%;
-  max-width: 200px;
-}
-
-.our-services {
-  padding: 1em 0.8em;
-  background-color: whitesmoke;
-  color: #111;
-}
-.our-services h2 {
-  font-weight: bolder;
-  font-size: 1.6rem;
-  text-decoration: underline #00d9ff;
-}
-.our-services p {
-  font-weight: 600;
-}
-
-.history {
-  padding: 1em 0.8em;
-}
-.history h2 {
-  color: #00d9ff;
-  font-size: 1.6rem;
-  text-decoration: underline whitesmoke;
+  clip-path: polygon(0 0, 80% 0%, 98% 96%, 1% 83%);
+  background-color: white;
+  border-top-left-radius: 0.9em;
+  padding: 0.4em 2.8em 0.4em 0.5em;
+  border: solid 2px rgba(255, 255, 255, 0.568);
+  background-color: rgba(0, 73, 55, 0.829);
 }
 
 /*# sourceMappingURL=style.css.map */

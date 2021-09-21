@@ -1,5 +1,18 @@
 header {
-    position: relative;
-    height: 40vh;
-    background: url(../img/backgrounds/background-car.jpg) no-repeat center/cover;
+    padding: .8em .9em;
+    list-style: none;
+    & nav {
+        @include flexy($dir: row, $align: center, $just: space-between);
+        font-size: 1.5rem;
+        .create-account {
+            border-radius: 50%;
+            padding: .2em .3em .12em;
+            border: solid 2px rgba(255, 255, 255, 0.568);
+            background-color: rgba(26, 26, 26, 0.829);
+            box-shadow: 2px 2px 10px black;
+        }
+    }
+    & a {
+        color: rgb(246, 246, 246);
+    }
 }
